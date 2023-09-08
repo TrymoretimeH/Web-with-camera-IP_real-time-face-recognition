@@ -2,7 +2,7 @@ const Stream = require('node-rtsp-stream');
 // const Stream = require('node-rtsp-stream-es6');
 stream = new Stream({
   name: 'name',
-  streamUrl: 'rtsp://admin:KEUKPL@192.168.1.240:554/',
+  streamUrl: 'rtsp://account:password@cameraIpAddress:rtsp_port/',
   wsPort: 9999,
   ffmpegOptions: { // options ffmpeg flags
     '-pix_fmt': 'yuv420p',
@@ -17,7 +17,7 @@ stream = new Stream({
 
 // const options = {
 //   name: 'streamName',
-//   url: 'rtsp://admin:KEUKPL@192.168.1.240:554/',
+//   url: 'rtsp://account:password@cameraIpAddress:rtsp_port/',
 //   port: 9999,
 // };
 // stream = new Stream(options);
